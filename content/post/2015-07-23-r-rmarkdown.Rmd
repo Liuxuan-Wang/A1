@@ -8,29 +8,21 @@ abstract: In this paper we are going to explore the number of Auto Theft cases f
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-## Input data
-```{r, echo = FALSE}
+# R Markdown
 
-library(opendatatoronto)
-library(dplyr)
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-# get package
-package <- show_package("fc4d95a6-591f-411f-af17-327e6c5d03c7")
+You can embed an R code chunk like this:
 
-# get all resources for this package
-resources <- list_package_resources("fc4d95a6-591f-411f-af17-327e6c5d03c7")
-
-# identify datastore resources; by default, Toronto Open Data sets datastore resource format to CSV for non-geospatial and GeoJSON for geospatial resources
-datastore_resources <- filter(resources, tolower(format) %in% c('csv', 'geojson'))
-
-# load the first datastore resource as a sample
-data <- filter(datastore_resources, row_number()==1) %>% get_resource()
-data
-
+```{r cars}
+summary(cars)
+fit <- lm(dist ~ speed, data = cars)
+fit
 ```
+
 # Including Plots
 
 You can also embed plots. See Figure \@ref(fig:pie) for example:
