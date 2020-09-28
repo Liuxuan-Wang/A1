@@ -1,7 +1,7 @@
 ---
 title: "Toronto Neighbourhood Auto Theft situation from 2014 to 2019"
 author: "Liuxuan Wang"
-date: 2020-09-27T21:13:14-05:00
+date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 abstract: In this paper we are going to explore the number of Auto Theft cases for each Toronto Neighbourhood from 2014 to 2019. To see if there is any neighbourhood which is unusual. Has the number of Auto Theft cases been varied a lot among years?
